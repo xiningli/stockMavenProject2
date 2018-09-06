@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b7df2ea-298c-4ddf-9413-ae7c9c496521" name="Default Changelist" comment="sure">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/stockProject_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StockCorrelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StockCorrelation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stockProject-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stockProject-basic-structure-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HeatChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HeatChart.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,27 +37,27 @@
           <entry key="class" value="7" />
           <entry key="csv" value="1" />
           <entry key="dummy" value="25" />
-          <entry key="java" value="10787" />
+          <entry key="java" value="10808" />
           <entry key="json" value="1" />
           <entry key="txt" value="4" />
-          <entry key="xml" value="464" />
+          <entry key="xml" value="465" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="CSV" value="1" />
-          <entry key="JAVA" value="10810" />
+          <entry key="JAVA" value="10831" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="XML" value="441" />
+          <entry key="XML" value="442" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="8" />
           <entry key="csv" value="13" />
-          <entry key="java" value="87" />
+          <entry key="java" value="90" />
           <entry key="json" value="3" />
           <entry key="png" value="4" />
           <entry key="xml" value="7" />
@@ -76,7 +68,7 @@
           <entry key="CLASS" value="8" />
           <entry key="CSV" value="11" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="87" />
+          <entry key="JAVA" value="90" />
           <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="7" />
@@ -98,11 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Csv2DFTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="240">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,9 +105,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
+            <state relative-caret-position="566">
               <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/HeatChart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="966" lean-forward="true" selection-start-line="966" selection-end-line="966" />
+              <folding>
+                <element signature="e#0#61693#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -124,30 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HeatChart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/StockOhlcav.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="94" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -207,10 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>------</find>
-      <find>AAA</find>
-      <find>IndexOutOfBoundsException</find>
-      <find>11</find>
       <find>Exception</find>
       <find>AAA-------------------------</find>
       <find>companyNames</find>
@@ -237,7 +226,14 @@
       <find>savetofile</find>
       <find>f</find>
       <find>maven-jar-plugin</find>
+      <find>stockMaven</find>
+      <find>(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/|[ \t]*//.*)</find>
+      <find>(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)</find>
+      <find>\/\*\s*[\s\S]*?\*\/$</find>
     </findStrings>
+    <replaceStrings>
+      <replace>(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/|[ \t]*//.*)</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -271,7 +267,6 @@
         <option value="$PROJECT_DIR$/src/main/java/GeneralstockDFHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/StockDataFrameTest3.java" />
         <option value="$PROJECT_DIR$/src/main/java/stockCorrelation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HeatChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/RequestLogFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmbeddedJettyFactoryConstructor.java" />
         <option value="$PROJECT_DIR$/src/main/java/User.java" />
@@ -285,6 +280,7 @@
         <option value="$PROJECT_DIR$/MMM.json" />
         <option value="$PROJECT_DIR$/src/main/java/StockCorrelation.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/HeatChart.java" />
       </list>
     </option>
   </component>
@@ -403,7 +399,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536218878628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536267754327" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -473,6 +469,17 @@
         <item itemvalue="Application.StockDataFrameTest2" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructuralSearchPlugin">
+    <replaceConfiguration name="user defined" created="1536267738386" text="/**&#10; $CommentContent$ &#10; */" recursive="false" caseInsensitive="false" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="" history="1">
+      <constraint name="CommentContent" within="" contains="" />
+    </replaceConfiguration>
+    <replaceConfiguration name="user defined" created="1536267622656" text="/**&#10; $CommentContent$ &#10; */" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="" history="1">
+      <constraint name="CommentContent" within="" contains="" />
+    </replaceConfiguration>
+    <replaceConfiguration name="user defined" created="1536267596239" text="/**&#10;qwe &#10; &#10; */" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="" history="1" />
+    <replaceConfiguration name="user defined" created="1536267582015" text="/**&#10; &#10; &#10; */" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="" history="1" />
+    <replaceConfiguration name="user defined" created="1536267024653" text="//" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="" history="1" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -573,15 +580,15 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49786553" weight="0.32972974" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49626467" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47438633" weight="0.40972972" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4850587" visible="true" weight="0.3264865" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5149413" side_tool="true" visible="true" weight="0.3264865" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48452508" weight="0.3264865" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037353" side_tool="true" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.46798292" weight="0.31783783" />
       <window_info anchor="bottom" id="Statistic" order="11" sideWeight="0.6872999" weight="0.5427027" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -716,16 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Csv2DFTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asd.csv" />
     <entry file="file://$PROJECT_DIR$/JJJ.csv">
       <provider selected="true" editor-type-id="text-editor" />
@@ -776,43 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Csv2DF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ApacheSparkSessionCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HeatChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StockOhlcav.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -849,6 +809,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Csv2DF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Csv2DFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GeneralstockDFHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -859,10 +839,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ApacheSparkSessionCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="180">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HeatChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="966" lean-forward="true" selection-start-line="966" selection-end-line="966" />
+          <folding>
+            <element signature="e#0#61693#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
