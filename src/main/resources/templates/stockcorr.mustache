@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{{> head }}
+<body>
+ {{> nav }}
+ <h1>Stock Correlation</h1>
+
+<form action="/result" method="get">
+  API Key:<br>
+  <input type="text" name="apikey" value="">
+  <br><br>
+  Stock Keys:<br> 
+  <input type="text" name="stockkeys" value="">
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the correlation will be sent to a page called "/result".</p>
+
+
+ {{> bootstrap-from-cdn-body }}
+</body>
+</html>

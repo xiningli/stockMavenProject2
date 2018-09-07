@@ -1,35 +1,22 @@
+
 import static spark.Spark.port;
-
-import org.apache.log4j.Logger;
-
-
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
-
-import spark.ModelAndView;
-import spark.template.mustache.MustacheTemplateEngine;
-
-import static spark.Spark.get;
-import static spark.Spark.post;
-
+import  java.nio.file.Paths;
 /**
- * Simple example of using Mustache Templates
+ * Hello world!
  *
  */
 
-public class Main {
-
-    public static final String CLASSNAME="stockProject";
-
-    public static final Logger log = Logger.getLogger(CLASSNAME);
-
+public class MainPlain {
     public static void main(String[] args) {
 
         port(getHerokuAssignedPort());
 
-
+        System.out.println("");
+        System.out.println("(Don't worry about the warnings below about SLF4J... we'll deal with those later)");
+        System.out.println("");
+        System.out.println("In browser, visit: http://localhost:" + getHerokuAssignedPort() );
+        System.out.println("");
         String html =
                 "<p>This web app is powered by \n" +
                         "<a href='hhttps://github.com/xiningli/stockMavenProject'>this github repo</a></p>\n"+
@@ -39,8 +26,11 @@ public class Main {
                         "<body>\n" +
                         "\n" +
                         "<form action=\"/result\">\n" +
+                        "API key:<br>\n" +
+                        "<input type=\"text\" name=\"apikey\" value=\"\">\n" +
+                        "<br>\n" +"<br>\n" +
                         "Company keys:<br>\n" +
-                        "<input type=\"text\" name=\"keys\" value=\"\">\n" +
+                        "<input type=\"text\" name=\"companykeys\" value=\"\">\n" +
                         "<br>\n" +"<br>\n" +
                         "<input type=\"submit\" value=\"Run\">\n"+
                         "</form> \n" +
@@ -49,18 +39,7 @@ public class Main {
                         "\n" +
                         "</body>\n" +
                         "</html>\n";
-
-
-        Map map = new HashMap();
-
-
-
-        map.put("key", "");
-
-
-        get("/", (req, res) -> new ModelAndView(map, "stockcorr.mustache"), new MustacheTemplateEngine());
-
-//        spark.Spark.get("/", (req, res) -> html);
+        spark.Spark.get("/", (req, res) -> html);
 //        spark.Spark.get("/result", (req, res) -> "<p><b>Hello, result!</b>  You just clicked the first link on my web app.</p>");
 
 
@@ -71,16 +50,16 @@ public class Main {
 
 
         spark.Spark.get("/result", (req,res)->{
+
             try{
                 ApiKeyAlphaVantage.setApiKey(req.queryParams("apikey"));
-
-                StockCorrelation corrAnalysis = new StockCorrelation(req.queryParams("stockkeys"));
-                return "<p>The current relative path is: "+s+" with stockkeys:" + req.queryParams("stockkeys") +" and API key: " + req.queryParams("apikey") + "</p>"+
+                StockCorrelation corrAnalysis = new StockCorrelation(req.queryParams("companykeys"));
+                return "<p>Current relative path is: "+s+"</p>"+
                         corrAnalysis.getHTMLplot()
                         ;
             }catch (Exception e){
                 e.printStackTrace();
-                return "<p>The current relative path is: "+s+" with stockkeys:" + req.queryParams("stockkeys")+"and API key: " + req.queryParams("apikey") + "</p>"+
+                return "<p>Current relative path is: "+s+"</p>"+
                         "<p>Illegal Entry! Please use the following format</p>"+
                         "<p>MMM AAPL GS GM IBM MSFT GOOG</p>"
                         ;
@@ -90,8 +69,6 @@ public class Main {
         });
 
 
-
-
     }
 
     static int getHerokuAssignedPort() {
@@ -99,7 +76,10 @@ public class Main {
         if (processBuilder.environment().get("PORT") != null) {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
-        return 4569; //return default port if heroku-port isn't set (i.e. on localhost)
+        return 4568; //return default port if heroku-port isn't set (i.e. on localhost)
+
+
+
     }
 
 

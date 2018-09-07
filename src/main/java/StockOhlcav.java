@@ -8,11 +8,10 @@ public class StockOhlcav
         String tmp = CompanyName.toUpperCase();
         CompanyName=tmp;
         File f = new File(CompanyName+".csv");
-        if (!f.exists()){
 
 
-            String url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol="+CompanyName+"&outputsize=full&apikey=R4MH59PCDVHF6SDB&datatype=csv";
 
+            String url = UrlAlphaVantage.getStockCSV(CompanyName, ApiKeyAlphaVantage.getApiKey());
             URL u;
             InputStream is = null;
             DataInputStream dis;
@@ -82,7 +81,7 @@ public class StockOhlcav
 
 
 
-        }
+
 
 
     }

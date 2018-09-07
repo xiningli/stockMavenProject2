@@ -41,6 +41,26 @@
             <version>2.5</version>
         </dependency>
 
+        <!-- log4j -->
+        <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-template-mustache</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math3</artifactId>
@@ -79,7 +99,12 @@
 
 
 
-
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <url>file://${project.basedir}/docs/</url>
+        </site>
+    </distributionManagement>
 
 
 <!-- FADDDDDDDDDD -->
@@ -218,7 +243,7 @@
                         <jdkVersion>1.8</jdkVersion>
                         <!-- Use your own application name -->
                         <!-- at Heroku CLI, use heroku apps to list, or use Heroku Dashboard -->
-                        <appName>cs56-m18-xiningli-lab04</appName>
+                        <appName>stockproject2</appName>
                         <processTypes>
                             <!-- Tell Heroku how to launch your application -->
                             <!-- You might have to remove the ./ in front   -->
