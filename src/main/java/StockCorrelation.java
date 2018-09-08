@@ -96,4 +96,50 @@ public class StockCorrelation {
         return html;
     }
 
+    public String getDataString() throws Exception{
+        String [] companys = new String[companyNames.size()];
+        for (int j = 0; j<companyNames.size(); j++){
+            companys[j] = companyNames.get(j);
+        }
+
+        HeatChart map = new HeatChart(this.corrmatrix);
+
+        map.setXValues(companys);
+        map.setYValues(companys);
+        BufferedImage theHeatMap = (BufferedImage)  map.getChartImage();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ImageIO.write(theHeatMap, "png", baos);
+        String data = DatatypeConverter.printBase64Binary(baos.toByteArray());
+//        String imageString = "data:image/png;base64," + data;
+ //       String html = "<img src='" + imageString + "'>";
+        return data;
+    }
+
+    public String getHTMLTable() throws Exception{
+
+        String result = "<table>";
+        for (int i = 0; i<=companyNames.size(); i++){
+            result+="<tr>";
+            for (int j = 0; j<=companyNames.size(); j++){
+                if(i==0 && j==0){
+                    result+="<td>&nbsp;</td>";
+                }
+                if(i==0 && j>0){
+                    result+="<td>"+companyNames.get(j-1)+"</td>";
+                }
+                if(j==0 && i>0){
+                    result+="<td>"+companyNames.get(i-1)+"</td>";
+                }
+                if (i>0&&j>0){
+                    result+="<td>"+corrmatrix[i-1][j-1]+"</td>";
+                }
+            }
+            result+="</tr>";
+
+        }
+        result+="</table>";
+        return result;
+
+    }
+
 }

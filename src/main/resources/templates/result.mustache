@@ -3,9 +3,15 @@
 {{> head }}
 <body>
  {{> nav }}
- <h1>Result of Adding Student:</h1>
+ <h1>Result of stock correlation calculations:</h1>
+ <h2>Heat Map:</h2>
 
-<p>Not implemented yet</p>
+<img src='data:image/png;base64,{{DataString}}'>
+
+
+ <h2>Correlation Table:</h2>
+
+{{{HTMLTable}}}
 
  {{> bootstrap-from-cdn-body }}
 </body>
